@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY gr "http://purl.org/goodrelations/v1#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY elod "http://linkedeconomy.org/ontology#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY geo "http://www.opengis.net/ont/geosparql#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://linkedeconomy.org/ontology#"
+     xml:base="http://linkedeconomy.org/ontology"
+     xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:gr="http://purl.org/goodrelations/v1#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:elod="http://linkedeconomy.org/ontology#">
+    <owl:Ontology rdf:about="http://linkedeconomy.org/ontology">
+        <rdfs:label xml:lang="en">Linked Economy</rdfs:label>
+        <dct:creator xml:lang="en">Eleftherios Galanos</dct:creator>
+        <dct:creator xml:lang="en">Giorgos Vafeiadis</dct:creator>
+        <owl:versionInfo xml:lang="en">Latest Update: 2016-03-28</owl:versionInfo>
+        <dct:creator xml:lang="en">Michalis Vafopoulos</dct:creator>
+        <foaf:homepage rdf:resource="http://linkedeconomy.org/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dct;creator"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/procurement/public-contracts-datatypes#percentage -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/procurement/public-contracts-datatypes#percentage"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="&xsd;gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#hasKind -->
+
+    <owl:ObjectProperty rdf:about="&elod;hasKind">
+        <rdfs:label xml:lang="en">has Kind</rdfs:label>
+        <rdfs:domain rdf:resource="&elod;KAE"/>
+        <rdfs:range rdf:resource="&elod;KaeKind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#hasSubKaeCode -->
+
+    <owl:ObjectProperty rdf:about="&elod;hasSubKaeCode">
+        <rdfs:label xml:lang="en">has Sub Kae Code</rdfs:label>
+        <rdfs:range rdf:resource="&elod;KAE"/>
+        <rdfs:domain rdf:resource="&elod;KAE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#hasSuperKaeCode -->
+
+    <owl:ObjectProperty rdf:about="&elod;hasSuperKaeCode">
+        <rdfs:label xml:lang="en">has Super Kae Code</rdfs:label>
+        <rdfs:domain rdf:resource="&elod;KAE"/>
+        <rdfs:range rdf:resource="&elod;KAE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#kaeFourDigits -->
+
+    <owl:DatatypeProperty rdf:about="&elod;kaeFourDigits">
+        <rdfs:label xml:lang="en">kae Four Digitis</rdfs:label>
+        <rdfs:domain rdf:resource="&elod;KAE"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#kaeOneDigit -->
+
+    <owl:DatatypeProperty rdf:about="&elod;kaeOneDigit">
+        <rdfs:label xml:lang="en">kae One Digit</rdfs:label>
+        <rdfs:domain rdf:resource="&elod;KAE"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#kaeThreeDigits -->
+
+    <owl:DatatypeProperty rdf:about="&elod;kaeThreeDigits">
+        <rdfs:label xml:lang="en">kae Three Digits</rdfs:label>
+        <rdfs:domain rdf:resource="&elod;KAE"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#kaeTwoDigits -->
+
+    <owl:DatatypeProperty rdf:about="&elod;kaeTwoDigits">
+        <rdfs:label xml:lang="en">kae Two Digits</rdfs:label>
+        <rdfs:domain rdf:resource="&elod;KAE"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#label -->
+
+    <owl:DatatypeProperty rdf:about="&elod;label">
+        <rdfs:label xml:lang="en">label</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&elod;KAE"/>
+                    <rdf:Description rdf:about="&elod;KaeKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#KAE -->
+
+    <owl:Class rdf:about="&elod;KAE">
+        <rdfs:label xml:lang="en">KAE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linkedeconomy.org/ontology#KaeKind -->
+
+    <owl:Class rdf:about="&elod;KaeKind">
+        <rdfs:label xml:lang="en">Kae Kind</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
