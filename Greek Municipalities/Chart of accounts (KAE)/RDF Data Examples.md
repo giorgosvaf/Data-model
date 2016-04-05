@@ -47,7 +47,7 @@
 		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Income/0/01/011/0115>;
 		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Income/0/01/011/0116>;
 		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Income/0/01/011/0117>;
-		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Income/0/01/011/0118>>.
+		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Income/0/01/011/0118>.
 		
   <http://linkedeconomy.org/resource/KAE/2015/Income/0/01/011/0111> a elod:KAE ;
         rdfs:label "Μισθώματα από αστικά ακίνητα (άρθρο 192 ΚΔΚ)"@el;
@@ -105,7 +105,7 @@
 		elod:hasSuperKaeCode <http://linkedeconomy.org/resource/KAE/2015/Expense/6/60>
 		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Expense/6/60/601/6011>;
 		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Expense/6/60/601/6012>;
-		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Expense/6/60/601/6013.
+		elod:hasSubKaeCode <http://linkedeconomy.org/resource/KAE/2015/Expense/6/60/601/6013>.
 		
   <http://linkedeconomy.org/resource/KAE/2015/Expense/6/60/601/6011> a elod:KAE ;
         rdfs:label "Τακτικές αποδοχες (περιλαμβάνονται βασικός μισθός, δώρα εορτών, γενικά και ειδικά τακτικά επιδόματα)"@el;
