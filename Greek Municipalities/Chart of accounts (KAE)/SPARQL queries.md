@@ -199,7 +199,7 @@ FILTER(langMatches(lang(?nameOfSubKaeCode), "en")).
 SELECT ?superKaeCode ?nameOfSuperKaeCode
 FROM <<http://linkedeconomy.org/Budgets/KAE>>
 WHERE {
-?superKaeCode elod:hasSubKaeCode <<http://linkedeconomy.org/resource/KAE/2015/Expense/6/60/601>>.
+?superKaeCode elod:hasSubKaeCode <<http://linkedeconomy.org/resource/KAE/2015/Expense/6/60>>.
 ?superKaeCode rdfs:label ?nameOfSuperKaeCode .
 FILTER(langMatches(lang(?nameOfSuperKaeCode), "en")).
 }
