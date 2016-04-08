@@ -1,5 +1,7 @@
 # Example Queries
 
+### Query results can be retrieved by [this google spreadsheet] (https://drive.google.com/open?id=10DyKiU2ACOuugbop8NMTYsi1p0fZCjkBBH6Qx_jGtpI).
+
 ##First Level KAEs for year 2015
 
 SELECT ?KAEUri ?nameOfKAE  
