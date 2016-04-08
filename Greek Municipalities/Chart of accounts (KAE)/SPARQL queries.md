@@ -157,7 +157,7 @@ FILTER(langMatches(lang(?nameOfKAE), "en")).
 
 SELECT ?KAEUri ?nameOfKAE  
 FROM <<http://linkedeconomy.org/Budgets/KAE>>
-WHERE {
+WHERE { 
 ?KAEUri rdfs:label ?nameOfKAE;
 elod:kaeFourDigits ?fourDigits.
 FILTER REGEX (STR(?KAEUri),"2015").
