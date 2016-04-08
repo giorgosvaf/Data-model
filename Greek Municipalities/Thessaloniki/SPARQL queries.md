@@ -1,5 +1,7 @@
 # Example Queries
 
+### Query results can be retrieved by [this google spreadsheet] (https://drive.google.com/open?id=1w2LwbZ8eED2_39YWZP_mg4dCE7JD6uNlKVEMgx_H0vI).
+
 ##First order Income Accounts with their amounts for year 2015
 
 SELECT ?kaeuri ?nameOfKae ?sum
